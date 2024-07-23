@@ -37,6 +37,7 @@ public class HardwarePesistenceData {
         Hardware hardware001 = new Hardware();
         hardware001.setDescricao("balanca");
         hardware001.setBalancas(balancas);
+        em.persist(hardware001);
         
         em.getTransaction().commit();
         JpaUtil.closeConnection();
