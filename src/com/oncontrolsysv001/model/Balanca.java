@@ -2,7 +2,10 @@ package com.oncontrolsysv001.model;
 
 import com.oncontrolsysv001.generic.GenericEntity;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
@@ -11,8 +14,10 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "tbbalanca")
+@SequenceGenerator(name = "seq_tbbalanca", sequenceName = "seq_tbbalanca", initialValue = 1, allocationSize = 50)
 public class Balanca extends GenericEntity {
     @Id
+    @GeneratedValue(generator = "seq_tbbalanca", strategy = GenerationType.SEQUENCE)
     private Long id;
     private String descricao;
     private String modelo;
