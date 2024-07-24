@@ -61,6 +61,11 @@ public class Hardware extends GenericEntity {
     public void setBalancas(List<Balanca> balancas) {
         this.balancas = balancas;
     }
+
+    @Override
+    public String toString() {
+        return "Hardware{" + "id=" + id + ", descricao=" + descricao + ", balancas=" + balancas + '}';
+    }
     
     
     

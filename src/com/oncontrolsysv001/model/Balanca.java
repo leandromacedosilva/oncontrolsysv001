@@ -69,6 +69,11 @@ public class Balanca extends GenericEntity {
     public void setNumeroSerie(String numeroSerie) {
         this.numeroSerie = numeroSerie;
     }
+
+    @Override
+    public String toString() {
+        return "Balanca{" + "id=" + id + ", descricao=" + descricao + ", modelo=" + modelo + ", numeroSerie=" + numeroSerie + '}';
+    }
     
     
 }
