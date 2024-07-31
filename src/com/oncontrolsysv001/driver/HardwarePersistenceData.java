@@ -11,7 +11,7 @@ import javax.persistence.EntityManager;
  *
  * @author leandro
  */
-public class HardwarePesistenceData {
+public class HardwarePersistenceData {
     public static void main(String[] args) {
                 
         EntityManager em = JpaUtil.openConnetion();

@@ -2,6 +2,7 @@ package com.oncontrolsysv001.generic;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.MappedSuperclass;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -9,6 +10,7 @@ import javax.persistence.TemporalType;
  *
  * @author leandro
  */
+@MappedSuperclass
 public abstract class GenericEntity implements Serializable {
     public Boolean active;
     @Temporal(TemporalType.TIMESTAMP)

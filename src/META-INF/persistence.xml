@@ -4,15 +4,15 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>com.oncontrolsysv001.model.Balanca</class>
     <class>com.oncontrolsysv001.model.Hardware</class>
+    <class>com.oncontrolsysv001.model.Impressora</class>
+    <class>com.oncontrolsysv001.model.Manutencao</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/datastoragedb"/>
       <property name="javax.persistence.jdbc.user" value="postgres"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
       <property name="javax.persistence.jdbc.password" value="if123@"/>
-      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
       <property name="eclipselink.logging.level" value="FINE"/>
-      <property name="eclipselink.logging.file" value=""/>
-      <property name="eclipselink.logging.session" value="true"/>
     </properties>
   </persistence-unit>
 </persistence>
