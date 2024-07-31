@@ -3,6 +3,23 @@
 querys for postgres sgdb
 .........................................................................
 database jpafcstoragedb
+select * from information_schema.tables where table_schema = 'public'; 
+select * from tbmanutencao;
+select * from tbimpressora;
+select * from tbmanutencao_tbimpressora;
+
+select 
+*
+from tbmanutencao tbm INNER JOIN tbimpressora tbi ON tbi.numeroserie like '%8438%';
+
+
+drop table tbbalanca;
+drop table tbhardware_tbbalanca;
+drop table tbhardware;
+drop table tbmanutencao;
+drop table tbmanutencao_tbimpressora;
+drop table tbimpressora;
+
 select * from information_schema.tables where table_schema = 'public';
 select * from tbbalanca;
 select * from tbhardware;
